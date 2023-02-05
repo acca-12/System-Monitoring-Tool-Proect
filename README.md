@@ -1,4 +1,5 @@
-#Heading System Monitoring Tool
+
+# System Monitoring Tool
 	This C program reports different metrics of utilization of a given system.It calculates 
 	memory usage, CPU usage, and also can also display the given users logged in.
 
@@ -152,13 +153,13 @@ That solves all of our problems!!!
 
 ## Function Overview:
 
-####bool checkIfStringIsNumber(char \*string)
+#### bool checkIfStringIsNumber(char \*string)
         brief: checks if char \*string is a number 
         param: char* to a string
         return: return true iff every character in char\* (up to null) is a 
         number
 
-####void header(int samples, int interval)
+#### void header(int samples, int interval)
         brief: Prints the number of int samples  and the int interval of time 
         the user has specified. Also prints the memory usage of the running 
         program
@@ -167,7 +168,7 @@ That solves all of our problems!!!
     
    
    	
-####void sequentialHeader(int iteration)
+#### void sequentialHeader(int iteration)
         brief: Only prints when user specifies sequential header. The header 
         prints the int iteration, as well as the memory usage of the running 
         program.
@@ -175,7 +176,7 @@ That solves all of our problems!!!
         param: int iteration: this specifies what iteration out of samples sequential is on.
     
  
-####void printSystem(int iteration, int samples, double  \*array, int sequential)
+#### void printSystem(int iteration, int samples, double  \*array, int sequential)
         brief: Calculates and prints the used and total physical/virtual memory.
         
         param: int iteration: the iteration out of samples the program is currently on. 
@@ -195,7 +196,7 @@ That solves all of our problems!!!
         new lines.
 
 
-####long int cpuInfo(long int previous, int i)
+#### long int cpuInfo(long int previous, int i)
         brief: Calculates change in CPU usage based on the long int previous 
         summation of cpu times excluding idle time.
         
@@ -214,10 +215,10 @@ That solves all of our problems!!!
         return: return a long int which is the calculated summation of times (without idle), so 
         it can be used for next iteration.
 
-####void printUser()
+#### void printUser()
         brief: Prints the users and sessions currently logged into the system using utmp
 
-####void printLogistics()
+#### void printLogistics()
         brief: Prints the logistics of the system, inlcuding system name, machine name, version,
         release, and architecture
 
